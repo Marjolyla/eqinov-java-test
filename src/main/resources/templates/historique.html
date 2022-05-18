@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" th:href="@{/webjars/jquery-ui/jquery-ui.min.css}" />
+	<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/theme.css}">
+	
+	<title>Historique</title>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-eqinov fixed-top">
+		<a class="navbar-brand" href="https://www.eqinov.com/" target="_blank">eqinov</a>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+			<span>Test de recrutement Java</span>
+		</div>
+	</nav>
+
+	<h2 th:text="${resultatHisto}"></h2>
+	<input type="button"  onclick="location.href='/'" value="Retour à l'accueil" >
+</body>
+</html>
